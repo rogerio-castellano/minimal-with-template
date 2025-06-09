@@ -12,4 +12,4 @@ FROM alpine:latest
 WORKDIR /app
 COPY --from=builder /app/minimal-webapp-with-template .
 EXPOSE 8080
-CMD ["./minimal-webapp-with-template"]
+CMD ["./minimal-webapp-with-template","-addr=:8080"]
